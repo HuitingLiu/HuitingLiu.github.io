@@ -1,1 +1,188 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Huiting Liu's Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Huiting Liu's home page">
+        <meta name="keywords" content="CMU,CS,LTI,MCDS,Huiting Liu,Software Engineer,Machine Learning,Deep Learning">
+        <meta name="author" content="Huiting Liu">
+        <link rel="stylesheet" href="ht.css">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="ht.js"> </script>
+    <body onload="var today = new Date();var year = today.getFullYear();document.getElementById('cryear').innerHTML = year">
+        <ul class="navbar">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="course.html">Courses</a></li>
+        </ul>
+
+        <div class="Row" id="PC" style="display: none;">
+            <div class="LeftColumn">
+                <img class = "avatar" src="static/square_avatar.jpg">
+            </div>
+
+            <div class="CenterColumn">
+                <h1>Huiting Liu</h1>
+                <p>Graduate Student</p>
+                <p>Master of Computational Data Science Program - Analytic Track</p>
+                <p>Language Technologies Institute, School of Computer Science</p>
+                <p>Carnegie Mellon University</p>
+                Resume:	&nbsp;<a href="file/HuitingLiu-Resume.pdf">PDF</a>
+            </div>
+
+            <div class="RightColumn">
+                <p>Email: huitingl(at)cs.cmu.edu</p>
+                <p>Phone: 4128886736</p>
+                <p>Follow me on</p>
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="https://github.com/HuitingLiu">
+                            <img height="28px" width="28px" src="static/github.png" alt="Github">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/liuhuiting">
+                            <img height="28px" width="28px" src="static/linkedin.png" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Mobile" style="display: none;">
+            <div class="MobileCell">
+                <img class = "avatar" src="static/square_avatar.jpg">
+            </div>
+
+            <div class="MobileCell">
+                <h1>Huiting Liu</h1>
+                <p>Graduate Student</p>
+                <p>Master of Computational Data Science Program - Analytic Track</p>
+                <p>Language Technologies Institute, School of Computer Science</p>
+                <p>Carnegie Mellon University</p>
+                Resume:	&nbsp;<a href="file/HuitingLiu-Resume.pdf">PDF</a>
+            </div>
+
+            <div class="MobileCell">
+                <p>Email: huitingl(at)cs.cmu.edu</p>
+                <p>Phone: 4128886736</p>
+                <p>Follow me on</p>
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="https://github.com/HuitingLiu">
+                            <img height="28px" width="28px" src="static/github.png" alt="Github">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/liuhuiting">
+                            <img height="28px" width="28px" src="static/linkedin.png" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="clear" ></div>
+        <hr>
+        <section>
+            <h1>Welcome</h1>
+            <p class="content">
+                I am a graduate student at the Language Technologies
+                Institute in the School of Computer Science at Carnegie Mellon
+                University. I used to be a full-time software engineer for over
+                two years, focused on backend system and product development.
+                I participated in developing several projects,
+                including question answering system, vertical search engine,
+                recommendation system, and several user products.
+                My motivation to continue my education is because I am very
+                interested in machine learning and data science. And I want to
+                learn the domain knowledge systematically. My current major is
+                MCDS program which is the abbreviation of Master of Computational
+                Data Science. It mainly focuses on Machine Learning, Artificial
+                Intelligence, and Data Science. My academic goal is to combine
+                my engineering experience with data science to become a talent
+                in both areas.
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h1>Skills Overview</h1>
+            <div>
+                <!--reference:http://reygreen1.github.io/2015/09/08/canvas-circle-progress/-->
+                <div class="canvas-wrap">
+                  <canvas class="circle-process" width="100" height="100" process="90%">90%</canvas>
+                  <div class="text">
+                    <p class="num">Machine Learning</p>
+                    <p class="tit"></p>
+                  </div>
+                </div>
+
+                <div class="canvas-wrap">
+                  <canvas class="circle-process" width="100" height="100" process="85%">85%</canvas>
+                  <div class="text">
+                    <p class="num">NLP</p>
+                    <p class="tit"></p>
+                  </div>
+                </div>
+
+                <div class="canvas-wrap">
+                  <canvas class="circle-process" width="100" height="100" process="90%">90%</canvas>
+                  <div class="text">
+                    <p class="num">System Design</p>
+                    <p class="tit"></p>
+                  </div>
+                </div>
+
+                <div class="canvas-wrap">
+                  <canvas class="circle-process" width="100" height="100" process="75%">75%</canvas>
+                  <div class="text">
+                    <p class="num">Project Manage</p>
+                    <p class="tit"></p>
+                  </div>
+                </div>
+
+                <div class="canvas-wrap">
+                  <canvas class="circle-process" width="100" height="100" process="95%">95%</canvas>
+                  <div class="text">
+                    <p class="num">Backend</p>
+                    <p class="tit">C++, Go...</p>
+                  </div>
+                </div>
+
+                <div class="canvas-wrap">
+                  <canvas class="circle-process" width="100" height="100" process="15%">15%</canvas>
+                  <div class="text">
+                    <p class="num">Frontend</p>
+                    <p class="tit">HTML,CSS...</p>
+                  </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="clear"></div>
+        <hr style="margin-top:20px;">
+        <section>
+            <h1>News</h1>
+            <p class="content"><b>I am graduating at December 20th 2017 and searching a fulltime job.</b></p>
+            <p class="content"><b>I got a summer internship at Apple.</b></p>
+            <p class="content">
+                <b>
+                Our Team, Ruby Star was selected to participate in Amazon Alexa
+                Prize Challenge with a $100,000 stipend and other supports from
+                Amazon! Congratulations to us all!
+                </b>
+                <a href="https://developer.amazon.com/alexaprize/teams/ruby-star">Details</a>
+            </p>
+        </section>
+        <footer>Copyright &copy;2016-<span id="cryear"></span> Huiting Liu</footer>
+    </body>
+    <script>
+        if( screen.width <= 480 ) {
+            document.getElementById("Mobile").style.display = "initial";
+        } else {
+            document.getElementById("PC").style.display = "initial";
+        }
+    </script>
+</html>

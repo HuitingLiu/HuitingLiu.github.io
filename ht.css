@@ -1,0 +1,229 @@
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #606060;
+    clear: left;
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #606060;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #333333;
+}
+
+.navbar li a.active{
+    background-color: #4CAF50;
+}
+
+.avatar {
+    float:left;
+    margin: 20px 20px 20px 20px;
+    padding:1px;
+    border:1px solid #cfd9e1;
+    width:210px;
+    height:210px; /*设置头像的长和宽*/
+    border-radius: 200px;/*设置头像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/
+    -webkit-border-radius: 200px;/*圆角效果：兼容webkit浏览器*/
+    -moz-border-radius:200px;
+    box-shadow: inset 0 -1px 0 #3333sf;/*设置头像阴影效果*/
+    -webkit-box-shadow: inset 0 -1px 0 #3333sf;
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360度）*/
+    -moz-transition: -moz-transform 0.4s ease-out;
+}
+
+/*鼠标滑过，图像旋转*/
+
+.avatar:hover {
+    box-shadow: 0 0 10px #fff;
+    rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+    -webkit-box-shadow: 0 0 10px #fff;
+    rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+}
+
+.Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+.LeftColumn {
+    float:left;
+    width: 380px;
+    display: table-cell;
+}
+
+.CenterColumn {
+    float:left;
+    width: 500px;
+    display: table-cell;
+}
+
+.RightColumn {
+    margin-top: 50px;
+    float:left;
+    width: 280px;
+    display: table-cell;
+}
+
+.MobileCell {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.leftbox {
+    float: left;
+    max-width: 250px;
+    margin: 0;
+    padding: 1em;
+}
+
+div.rightbox {
+    margin-left: 250px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li{
+    display: inline-block;
+    padding: 0px 2px;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+.clear {
+    clear:both;
+}
+
+section {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section h1 {
+    font-size: 2em;
+    color: #fd6424;
+}
+
+section p.content {
+    font-size: 1.17em;
+    text-align: justify;
+}
+
+section li {
+    margin-top: 20px;
+}
+
+.canvas-wrap{
+  position: relative;
+  float:left;
+  width: 100px;
+  height: 100px;
+  margin: 10px 20px 0 10px;
+}
+
+.circle-process{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.text{
+  position: absolute;
+  top : 0;
+  left : 0;
+  width: 100px;
+  text-align: center;
+}
+.text .num{
+  font-size: 20px;
+  margin: 30px 0 0 0;
+  color: #fd6424;
+}
+.text .tit{
+  font-size: 12px;
+  margin: 8px 0 0;
+  color: #aeaeae;
+}
+
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    background:url(static/plus.png) center left no-repeat;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+}
+
+
+span.head {
+    display: inline;;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+span.course {
+    font-size: 1.2em;
+    font-weight: bold;
+}
